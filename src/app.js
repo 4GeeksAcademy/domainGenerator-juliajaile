@@ -2,9 +2,6 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
 //write your code here
 function generateAllDomainCombinations() {
   let pronoun = ["the", "our"];
@@ -17,12 +14,12 @@ function generateAllDomainCombinations() {
       for (let nounItem of noun) {
         for (let extensionItem of extension) {
           console.log(
-            `${pronounItem} ${adjectiveItem} ${nounItem} ${extensionItem}`
+            `${pronounItem}${adjectiveItem}${nounItem}${extensionItem}`
           );
         }
       }
     }
-  } //return `${pronounItem} ${adjectiveItem} ${nounItem} ${extensionItem}`;
+  }
 }
 
 generateAllDomainCombinations();
