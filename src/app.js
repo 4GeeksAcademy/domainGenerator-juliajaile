@@ -9,6 +9,7 @@ function generateAllDomainCombinations() {
   let noun = ["jogger", "racoon"];
   let extension = [".com", ".net", ".us", ".io"];
 
+  let domainsNoun = " ";
   for (let pronounItem of pronoun) {
     for (let adjectiveItem of adj) {
       for (let nounItem of noun) {
@@ -16,13 +17,13 @@ function generateAllDomainCombinations() {
           console.log(
             `${pronounItem}${adjectiveItem}${nounItem}${extensionItem}`
           );
+          domainsNoun +=
+            pronounItem + adjectiveItem + nounItem + extensionItem + "</br>";
         }
       }
     }
   }
+  return domainsNoun;
 }
 
-generateAllDomainCombinations();
-
-//let domainElement = document.getElementById("domain");
-//domainElement.innerHTML = generateAllDomainCombinations();
+document.getElementById("domain").innerHTML = generateAllDomainCombinations();

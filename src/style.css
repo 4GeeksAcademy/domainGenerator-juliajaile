@@ -1,1 +1,22 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: #f8d7da;
+}
+
+h1 {
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "ELSH" 0;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.final-sentence {
+  font-size: 25px;
+  font-weight: 600;
+}
